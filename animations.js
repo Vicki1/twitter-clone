@@ -102,7 +102,24 @@ tweetSubmit.on('click', function(){
   
   //newTweetBox.prependTo('#stream');
     //$('$content').val().prependTo(".tweet");
-    })
+})
+
+
+$('.tweet-actions').hide();
+
+   $('content').hover( 
+function(){ 
+ $(this, '.tweet-actions').show();
+},
+function(){ 
+  $(this, '.tweet-actions').hide();
+})
+
+
+
+  
+
+
 
 
 }) // this is the end of the document
